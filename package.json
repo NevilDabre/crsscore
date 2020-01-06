@@ -9,7 +9,10 @@
   },
   "author": "Neville <neville.dabreo> (nevil_dabre@yahoo.com)",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
