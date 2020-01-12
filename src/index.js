@@ -1,4 +1,4 @@
-import crsScore from './getCurrentCrsScore'
+import crsScore from './currentCrsScore';
 
 const crsScoreResult = async () => {
   const res = await crsScore();

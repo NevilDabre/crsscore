@@ -5,9 +5,9 @@ const scrapeCrsScoreAsync = async () => {
   return scrapeCrsScoreResponse;
 };
 
-const getScrapeCrsScore = () => {
+const currentScrapeCrsScore = () => {
   const crsScore = scrapeCrsScoreAsync();
   return crsScore;
 };
 
-module.exports = getScrapeCrsScore;
+module.exports = currentScrapeCrsScore;
