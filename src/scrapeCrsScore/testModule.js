@@ -1,4 +1,4 @@
-import scrapeCrsScore from './scrapeCrsScore/scrapeCrsScore';
+import scrapeCrsScore from './scrapeCrsScore';
 
 const scrapeCrsScoreAsync = async () => {
   const scrapeCrsScoreResponse = await scrapeCrsScore();
