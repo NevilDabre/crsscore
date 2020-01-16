@@ -1,12 +1,8 @@
-import getCurrentCrsScore from './getCurrentCrsScore';
+import crsScore from './currentCrsScore';
 
-const score = async () => {
-  try {
-    const scoredata = await getCurrentCrsScore();
-    return scoredata;
-  } catch (err) {
-    throw new Error('Something went wrong.');
-  }
+const crsScoreResult = async () => {
+  const res = await crsScore();
+  return res;
 };
 
-export default score;
+module.exports = crsScoreResult;
