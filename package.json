@@ -1,5 +1,5 @@
 {
-  "name": "canada-crs-score",
+  "name": "@neville.dabreo/canada-crs-score",
   "version": "1.1.0",
   "description": "canada crs score live information",
   "main": "./lib/index.js",

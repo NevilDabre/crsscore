@@ -1,7 +1,7 @@
 # Canada Permenat Resident Express Entry Live Score
 - This module provides Comprehensive Ranking System (CRS) updates which is used for skilled immigrants (Express Entry). The CRS is a points-based system that we use to assess and score your profile and rank it in the Express Entry pool.
-- You can calculate your score here: [CIC Website](https://www.cic.gc.ca/english/immigrate/skilled/crs-tool.asp).
 - This tool uses information from following page: [CRS Website](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile/rounds-invitations.html)
+- You can calculate your score here: [CIC Website](https://www.cic.gc.ca/english/immigrate/skilled/crs-tool.asp).
 
 ### Install
 ```shell
@@ -28,6 +28,7 @@ I have provided return result with two object properties as follows
   - Formatted - JS friendly object for developers.
 
 ```js
+//example
 { plain:
    { 'Number of invitations issued': '3,400',
      'Rank required to be invited to apply': '3,400',
