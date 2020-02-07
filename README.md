@@ -16,7 +16,7 @@ import getCrsScore from "@neville.dabreo/canada-crs-score";
 // Get the latest score and other information
 const crsScore = async () => {
   const crsScoreResult = await getCrsScore();
-  // Do your stuff with result and retrun result in promise!
+  // Do your stuff with result. NOTE - returns result in a promise.
   console.log(crsScoreResult);
   return crsScoreResult;
 };
