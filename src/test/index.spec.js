@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import CrsScore from '../index';
+import { crsLiveScore as CrsScore } from '../index';
 
 async function getCrsScore() {
   const res = await CrsScore();
