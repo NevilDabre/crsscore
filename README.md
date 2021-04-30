@@ -11,13 +11,12 @@ npm install @neville.dabreo/canada-crs-score
 ### Usage
 ```js
 // Load module
-import getCrsScore from "@neville.dabreo/canada-crs-score";
+import { crsLiveScore } from "@neville.dabreo/canada-crs-score";
  
 // Get the latest score and other information
 const crsScore = async () => {
-  const crsScoreResult = await getCrsScore();
+  const crsScoreResult = await crsLiveScore();
   // Do your stuff with result. NOTE - returns result in a promise.
-  console.log(crsScoreResult);
   return crsScoreResult;
 };
 
@@ -33,20 +32,21 @@ I have provided return result with two object properties as follows
 
 ```js
 //example
-{ plain:
-   { 'Number of invitations issued': '3,400',
-     'Rank required to be invited to apply': '3,400',
-     'Date and time of round': 'January 8, 2020 at 13:33:44 UTC',
-     'CRS score of lowest-ranked candidate invited': '473',
-     'Tie-breaking rule': 'December 27, 2019 at 13:35:09 UTC'
-    },
-  json:
-   { number_of_invitations_issued: 3400,
-     rank_required_to_be_invited_to_apply: 3400,
-     date_and_time_of_round: 2020-01-08T13:33:44.000Z,
-     'crs_score_of_lowest-ranked_candidate_invited': 473,
-     'tie-breaking_rule': 2019-12-27T13:35:09.000Z 
-    } 
+{
+  plain: {
+    'Number of invitations issued': '6000',
+    'Rank required to be invited to apply': '6000',
+    'Date and time of round': 'April 29, 2021 at 10:34:05 UTC',
+    'CRS score of lowest-ranked candidate invited': '400',
+    'Tie-breaking rule': 'April 24, 2021 at 15:24:49 UTC'
+  },
+  json: {
+    number_of_invitations_issued: 6000,
+    rank_required_to_be_invited_to_apply: 6000,
+    date_and_time_of_round: 2021-04-29T10:34:05.000Z,
+    'crs_score_of_lowest-ranked_candidate_invited': 400,
+    'tie-breaking_rule': 2021-04-24T15:24:49.000Z
+  }
 }
 ```
 
