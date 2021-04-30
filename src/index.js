@@ -5,4 +5,6 @@ const crsScoreResult = async () => {
   return res;
 };
 
-export default crsScoreResult;
+module.exports = {
+  crsLiveScore: crsScoreResult,
+};
